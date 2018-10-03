@@ -1,0 +1,58 @@
+.message-form {
+    height: 15vh;
+    position: relative;
+}
+
+.message-form textarea {
+    /*border-radius: 5px;*/
+    /*border:1px solid black;*/
+    /*resize: none;*/
+    /*width: 99%;*/
+    /*height: 85%;*/
+    /*margin: 5% 0;*/
+    /***/
+    float: left;
+    border: none;
+    padding: 5%;
+    width: 70%;
+    resize: none;
+}
+
+.message-form textarea:focus {
+    outline: none;
+}
+
+.message-form input[type="submit"]
+{
+    height: 100%;
+    width: 20%;
+    float: left;
+    background-color: #4876f9;
+    border: none;
+    color: #f0f5f9;
+    font-size: 2em;
+}
+
+.arrow-right.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 16px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.arrow-right.icon:before {
+    content: '';
+    position: absolute;
+    right: 1px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+

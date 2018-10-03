@@ -1,0 +1,48 @@
+.room{
+    position: relative;
+    margin: 10% auto;
+}
+
+.room img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.room .tool-tip {
+    /*visibility: hidden;*/
+    /*background-color: #7874f2;*/
+    /*color: rgba(0, 0, 0, 0.62);*/
+    /*padding: 5px 10px;*/
+    /*border-radius: 5px;*/
+    /*margin: 5px;*/
+    /*position: absolute;*/
+    /*top: 100px;*/
+    /*z-index: 99999;*/
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7874f2;
+    color: #f0f5f9;
+    border-radius: 50%;
+}
+.room .tool-tip .tool-tip-text
+{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.room:hover .tool-tip{
+    opacity: 1;
+}
+

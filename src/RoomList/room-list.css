@@ -1,0 +1,15 @@
+.room-list{
+    float: left;
+    width: 15%;
+    background-color: #b1cbfa;
+    height: 100vh;
+    overflow: auto;
+}
+.room-list ul
+{
+    margin: 0;
+}
+.room-list li{
+    display: inline-block;
+    list-style: none;
+}
