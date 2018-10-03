@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import {sendMessages} from '../AC'
+import {connect} from 'react-redux'
 import './MessageForm.css'
 
 class MessageForm extends Component {
@@ -9,7 +11,8 @@ class MessageForm extends Component {
         this.textArea = React.createRef();
 
         this.state = {
-            message: ''
+            user: 'bogdan',
+            text: ''
         }
     }
 
@@ -18,7 +21,7 @@ class MessageForm extends Component {
             <form className='message-form'>
                 <textarea
                     onChange={this.handleKeyDown}
-                    value={this.state.message}
+                    value={this.state.text}
                     onKeyDown={this.handleKeyDown}
                     ref={this.textArea}
                     placeholder='Type Message ...'/>
@@ -34,11 +37,11 @@ class MessageForm extends Component {
     handleKeyDown = (e) => {
         if(e.keyCode === 13)
         {
-            console.log(this.state.message);
-            this.setState({message: ''});
+            this.props.sendMessages(this.state);
+            this.setState({text: ''});
             e.preventDefault();
         }else{
-            this.setState({message: e.target.value})
+            this.setState({text: e.target.value})
         }
     }
 
@@ -47,4 +50,4 @@ class MessageForm extends Component {
 
 MessageForm.propTypes = {};
 
-export default MessageForm;
+export default connect(null, {sendMessages})(MessageForm);

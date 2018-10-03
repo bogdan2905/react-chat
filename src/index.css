@@ -12,11 +12,26 @@ body{
   box-sizing: border-box;
   min-width: 780px;
 }
-.border{
-  border-radius: 10px;
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.main-color{
-  background-color: #f0f5f9
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #7874f2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 

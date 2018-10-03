@@ -12,7 +12,7 @@ class Room extends Component {
                 </span>
 
                 <img
-                    src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNQ2yyZICBI_pcqc_KxT55FYvlpE8TtOKTlVuNuVyjbr1BSwLhw'/>
+                    src='https://picsum.photos/200/300/?random'/>
 
             </div>
         );
