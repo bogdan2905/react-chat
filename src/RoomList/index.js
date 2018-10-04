@@ -10,24 +10,28 @@ import './room-list.css'
 
 const style = {
     Button: {
-        margin: "0 auto"
+        margin: "0 auto",
     },
     Paper: {
-        height: "98%"
+        height: "100%",
+    },
+    List: {
+        height: "100%",
+        overflow: "auto"
     }
 };
 
 class RoomList extends Component {
     render() {
         const {rooms, classes} = this.props;
-        const roomsElems = rooms.map(room => <ListItem key={room._id}><Room room={room}/></ListItem>);
+        const roomsElems = rooms.map(room => <ListItem button disableGutters key={room._id}><Room room={room}/></ListItem>);
         return (
-            <Grid direction={"column"} md={1} sm={1} lg={1} justify={"center"}>
+            <Grid md={1} sm={1} lg={1} item style={{paddingRight: "10px"}} alignContent={"center"}>
                 <Paper className={classes.Paper}>
-                    <List>
+                    <List className={classes.List}>
                         {roomsElems}
-                        <ListItem>
-                            <Button variant="fab" color="primary">
+                        <ListItem disableGutters selected>
+                            <Button variant="fab" color="primary" className={classes.Button}>
                                 <AddIcons/>
                             </Button>
                         </ListItem>

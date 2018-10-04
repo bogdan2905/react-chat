@@ -1,29 +1,29 @@
-.room-list{
-    float: left;
-    width: 10%;
-    background-color: #b1cbfa;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+/*.room-list{*/
+    /*float: left;*/
+    /*width: 10%;*/
+    /*background-color: #b1cbfa;*/
+    /*height: 100vh;*/
+    /*overflow-y: auto;*/
+    /*overflow-x: hidden;*/
 
-}
-.room-list ul
-{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.room-list li{
-    display: inline-block;
-    list-style: none;
-}
+/*}*/
+/*.room-list ul*/
+/*{*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+/*}*/
+/*.room-list li{*/
+    /*display: inline-block;*/
+    /*list-style: none;*/
+/*}*/
 
-.room-add{
-    cursor: pointer;
-}
+/*.room-add{*/
+    /*cursor: pointer;*/
+/*}*/
 
-.add-button{
-    color: red;
-}
+/*.add-button{*/
+    /*color: red;*/
+/*}*/

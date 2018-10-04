@@ -1,6 +1,12 @@
-body{
-  /*margin: 0;*/
-  /*padding: 0;*/
+body,html {
+  overflow: hidden;
+  background-color: #EEEEEE;
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
 }
 /*#root {*/
   /*font-family: sans-serif;*/

@@ -12,7 +12,7 @@ class Chat extends Component {
     render() {
         return (
             <Provider store={store}>
-                <Grid direction={"row"} lg={4}>
+                <Grid direction={"row"} lg={3} md={3} sm={3} item style={{paddingRight: "10px"}}>
                     <MessagesBox messages={normalizedComments}/>
                     <MessageForm/>
                 </Grid>
