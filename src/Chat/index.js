@@ -5,16 +5,17 @@ import {normalizedComments} from '../fixtures'
 import MessageForm from "../MessageForm";
 import {Provider} from 'react-redux'
 import store from '../store'
+import {Grid} from "@material-ui/core"
 import './chat.css'
 
 class Chat extends Component {
     render() {
         return (
             <Provider store={store}>
-                <div className='chat'>
+                <Grid direction={"row"} lg={4}>
                     <MessagesBox messages={normalizedComments}/>
                     <MessageForm/>
-                </div>
+                </Grid>
             </Provider>
         );
     }

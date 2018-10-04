@@ -4,6 +4,7 @@ import {sendMessages} from '../AC'
 import {connect} from 'react-redux'
 import './MessageForm.css'
 
+
 class MessageForm extends Component {
     constructor(props) {
         super(props);
